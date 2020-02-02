@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- This stylesheet contains specific styles for displaying the map
+         on this page. Replace it with your own styles as described in the
+         documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial -->
+         <style>
+          #map {
+            height: 100%;
+          }
+          html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+          }
+        </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var start = {lat: 64.142565, lng: -21.927809};
+        var finish = {lat: 64.128852, lng: -21.917114};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: start,
+          scrollwheel: true,
+          zoom: 10
+        });
+
+        var directionsDisplay = new google.maps.DirectionsRenderer({
+          map: map
+        });
+
+        // Set destination, origin and travel mode.
+        var request = {
+          destination: finish,
+          origin: start,
+          travelMode: 'DRIVING'
+        };
+
+        // Pass the directions request to the directions service.
+        var directionsService = new google.maps.DirectionsService();
+        directionsService.route(request, function(response, status) {
+          if (status == 'OK') {
+            // Display the route on the map.
+            directionsDisplay.setDirections(response);
+          }
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBr6o_HQ-USuLFFCAzFaEv16U-HRxbanM0&callback=initMap"
+        async defer></script>
+  </body>
+</html>

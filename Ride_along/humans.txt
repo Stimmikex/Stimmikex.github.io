@@ -1,0 +1,12 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Styrmir Óli Þorsteinsson -- Back/Front end developer
+    Bjarki Fannar Snorrason -- Back/Front end developer
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    jQuery, Normalize.css, Moment.js
