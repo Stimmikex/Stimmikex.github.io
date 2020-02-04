@@ -1,6 +1,0 @@
-Hallgrímskirkja; 64.142565; -21.927809
-Tækniskólinn - Skólavörðuholti; 64.142092; -21.925588
-Tækniskólinn - Vörðuskóli; 64.141285; -21.924140
-Tækniskólinn - Háteigsvegi; 64.138943; -21.902783
-Perlan; 64.128852; -21.917114
-Kringlan; 64.130461; -21.895388
